@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{position: relative; width: 100%; height: 700px;}
+.inner{width: 1200px; margin: auto; height: 700px;}
+header{height: 100px; padding-top: 30px; padding-left: 10px; position: relative;}
+nav{position: absolute; top: 58px; right: 0; z-index: 10;}
+nav>ul{display: flex;}
+nav>ul>li>a{display: block; padding: 10px; width: 150px; color: #1ab751; border: 1px solid #1ab751; text-align: center;}
+nav>ul>li>a:nth-child(2){border: 0;}
+nav>ul>li>a:nth-child(3){border: 0;}
+nav>ul>li>a:nth-child(4){border: 0;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: green; color: #fff;}
+.sub{display: none;}
+.sub>li>a{display: block; width: 150px; text-align: center; padding: 5px; color: #fff;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: #1ab751;}
+.bg{position: absolute; top: 100px; left: 0; width: 1200px; height: 100px; background: rgba(0, 0, 0, .8); z-index: 5; display: none;}
+
+.slide{height: 300px; position: relative; overflow: hidden;}
+.slide ul{position: absolute; width: 3600px; height: 300px; display: flex; top: 0; left: 0;}
+.slide ul li{position: relative; width: 1200px; height: 300px;}
+.slide ul li a{display: block; height: 100%;}
+.slide ul li img{width: 100%; height: 100%; object-fit: cover;}
+.slide ul li h2{position: absolute; width: 800px; padding: 20px; background: rgba(0, 0, 0, .6); color: #fff; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 30px;}
+
+.con{height: 200px; display: flex;}
+.con article{width: 400px;}
+.notice{margin-top: 10px;}
+.notice h2{margin-bottom: 10px;}
+.notice h2>a{display: block; width: 150px; text-align: center; background: green; color: #fff; padding: 5px;}
+.notice th>a{display: block; width: 300px; text-align: left; padding: 5px;}
+.notice td{width: 100px; text-align: center; font-size: 14px;}
+.notice tr{border-bottom: 1px dashed #333;}
+
+.gall{margin-top: 10px;}
+.gall h2{margin-bottom: 10px; margin-left: 20px;}
+.gall h2>a{display: block; width: 150px; text-align: center; background: green; color: #fff; padding: 5px;}
+.gall ul{display: flex; gap: 10px; justify-content: center; padding-top: 20px; padding-left: 20px;}
+
+.banner{margin-top: 10px;}
+.banner a{height: 100%; display: block; padding: 10px; position: relative;}
+.banner img{width: 380px; height: 100%; object-fit: cover; border-radius: 20px;}
+.banner div{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; width: 360px; text-align: center;}
+.banner h6{display: inline-block; padding: 5px; background: #333;}
+.banner h3{font-size: 24px; margin-bottom: 10px;}
+.banner p{color: #333; text-shadow: 2px 2px 7px rgba(255, 255, 255, 1); font-weight: bold;}
+
+footer{height: 100px; background: #333; color: #fff; padding-top: 30px; padding-left: 10px; display: flex; gap: 20px; position: relative;}
+select{position: absolute; top: 40px; right: 20px;}
+
+.popup{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, .5); width: 1200px; height: 700px; z-index: 9999; display: none;}
+.popcon{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; width: 500px; padding: 20px; text-align: center; border-radius: 20px;}
+.button{text-align: right;}
+button{padding: 10px;}
+button:hover{background: seagreen; color: #fff;}
