@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{width: 1000px; height: 650px; display: flex; position: relative;}
+header{width: 200px; background: #9725e7; padding-top: 60px;}
+nav{margin-top: 30px; position: relative;}
+nav>ul>li{padding: 0 10px;}
+nav>ul>li>a{display: block; width: 180px; padding: 10px; text-align: center; background: #23cb4e;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: purple; color: #fff;}
+
+.sub{position: absolute; top: -20px; width: 180px; height: 250px; background: #fff; left: 190px; z-index: 10; display: none;}
+.sub>li>a{display: block; width: 180px; padding: 5px; text-align: center; background: #fff;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: #9725e7; color: #fff;}
+
+.contents{width: 800px;}
+.slide{width: 800px; height: 350px; position: relative; overflow: hidden;}
+.slide ul{width: 2400px; height: 350px; position: absolute; top: 0; left: 0; display: flex;}
+.slide ul li{position: relative; width: 800px; height: 350px;}
+.slide ul li a{display: block; height: 100%;}
+.slide img{width: 100%; height: 100%; object-fit: cover;}
+.slide ul li div{position: absolute; top: 40%; left: 50%; transform: translate(-50%, -40%);}
+.slide ul li h2{font-size: 50px; color: #fff; text-shadow: 2px 2px 7px #333;}
+.slide ul li p{font-size: 24px; background: #333; display: inline-block; padding: 10px; color: #fff; margin-left: 10px;}
+
+.con{width: 800px; height: 200px; display: flex;}
+.notice{width: 300px; padding: 5px;}
+.notice h2>a{display: block; width: 150px; text-align: center; padding: 5px; background: #23cb4e; margin-left: 50px;}
+.notice th>a{display: block; width: 240px; text-align: left; padding: 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.notice td{width: 60px; text-align: center;}
+.notice tr:nth-child(2){background: #888;}
+.notice tr:nth-child(4){background: #888;}
+
+.gall{width: 300px; padding: 5px;}
+.gall h2>a{display: block; width: 150px; text-align: center; padding: 5px; background: #9725e7; margin-left: 50px; color: #fff;}
+.gall ul{padding: 10px 5px; display: flex; gap: 10px;}
+.gall img{width: 85px; height: 140px; object-fit: cover;}
+
+.go{width: 200px; background: #EC775D; padding: 5px;}
+.go h2>a{display: block; width: 150px; text-align: center; padding: 5px; background: #9725e7; margin-left: 20px; color: #fff;}
+.go div{margin-top: 30px; margin-left: 5px; background: #23cb4e; width: 180px; padding: 10px;}
+.go h3{font-size: 24px; text-align: center; color: #fff; font-weight: normal;}
+.go p{font-size: 11px; text-align: center;}
+
+footer{width: 800px; height: 100px; background: #333; color: #fff; padding-top: 10px; padding-left: 10px; display: flex; position: relative; gap: 20px;}
+.flogo img{width: 150px; height: 80px;}
+select{position: absolute; top: 40px; right: 10px;}
+.fcopy{font-size: 12px; margin-top: 25px;}
+
+.popup{position: absolute; width: 1000px; height: 650px; background: rgba(0, 0, 0, .5); z-index: 9999; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;}
+.popcon{position: absolute; width: 500px; padding: 20px; background: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; border-radius: 20px;}
+.button{text-align: right; margin-top: 10px;}
+button{padding: 10px;}
+button:hover{background: #23cb4e; color: #fff;}

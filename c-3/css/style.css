@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+body{background: #fff; color: #333;}
+table{border-collapse: collapse;}
+button{cursor: pointer;}
+
+.wrap{position: relative; width: 1000px; height: 650px; display: flex;}
+header{width: 200px; background: #e7a925; padding-top: 60px;}
+nav{margin-top: 30px; position: relative;}
+nav>ul>li{padding: 0 10px;}
+nav>ul>li>a{display: block; width: 180px; padding: 10px; border: 1px solid #fff; text-align: center;}
+nav>ul>li:nth-child(2)>a{border-top: none; border-bottom: none;}
+nav>ul>li:nth-child(3)>a{border-bottom: none;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: yellow;}
+.sub{position: absolute; z-index: 10; top: -20px; left: 190px; width: 180px; height: 250px; background: #fff; display: none;}
+.sub>li>a{display: block; width: 180px; padding: 5px; background: #fff; text-align: center;}
+.sub>li>a:hover,
+.sub>li>a:focus{background: #e7a925;}
+
+.contents{width: 800px;}
+.slide{width: 800px; height: 350px; position: relative; overflow: hidden;}
+.slide ul{position: absolute; top: 0; left: 0; width: 2400px; height: 350px; display: flex;}
+.slide ul li{position: relative; width: 800px; height: 350px;}
+.slide ul li a{display: block; height: 100%;}
+.slide img{width: 800px; height: 350px; object-fit: cover;}
+.slide ul li h2{position: absolute; top: 30%; left: 50%; transform: translate(-50%, -30%); background: #333; width: 800px; padding: 10px; text-align: center; color: #fff;}
+
+.con{width: 800px; height: 200px; display: flex;}
+.notice{width: 300px; padding: 5px;}
+.notice h2>a{display: block; width: 280px; text-align: center; background: #e7a925; padding: 5px;}
+.notice th>a{display: block; width: 240px; padding: 7px; text-align: left; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.notice td{text-align: center; width: 60px;}
+.notice tr:nth-child(2){background: #eee;}
+.notice tr:nth-child(4){background: #eee;}
+
+.gall{width: 300px; padding: 5px;}
+.gall h2>a{display: block; width: 280px; text-align: center; background: #e7a925; padding: 5px;}
+.gall ul{padding: 10px 3px; display: flex; gap: 10px;}
+.gall a:hover{opacity: 0.5;}
+.gall img{width: 85px; height: 140px; object-fit: cover;}
+
+.banner{width: 200px; padding: 5px;}
+.banner h2>a{display: block; width: 190px; text-align: center; background: #e7a925; padding: 5px;}
+.banner>a{display: block; height: 100%; padding-top: 10px; position: relative;}
+.banner img{width: 200px; height: 140px; object-fit: cover;} 
+.banner a>div{position: absolute; width: 190px; height: 140px; background: rgba(0, 0, 0, .6); top: 10px; left: 0; padding: 20px; text-align: center;}
+.banner h3{color: #e7a925; margin-bottom: 10px;}
+.banner p{color: #fff; font-size: 12px;}
+
+footer{width: 800px; height: 100px; background: #333; color: #fff; padding-top: 15px; padding-left: 10px; display: flex; gap: 20px;}
+.flogo img{width: 200px; height: 80px;}
+.fmenu{display: flex; gap: 10px; margin-top: 15px; margin-bottom: 5px;}
+.fmenu>li{border-right: 1px solid #fff; padding-right: 10px;}
+.fmenu>li:last-child{border: 0;}
+
+.popup{position: absolute; width: 500px; padding: 20px; text-align: center; background: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 20px; display: none; z-index: 9999;}
+.button{text-align: right; margin-top: 10px;}
+button{padding: 10px;}
+button:hover{background: #e7a925; color: #fff;}
